@@ -11,7 +11,7 @@ Feature:Testing Navigation Success with valid and invalid credentials
     Then verify that dashboard page tab name contains QUGEM
     Then Click the sign out button
 
-    #Then sign out to come back to login page --not necessary
+    #Then sign out to come back to login page
 
 
 
