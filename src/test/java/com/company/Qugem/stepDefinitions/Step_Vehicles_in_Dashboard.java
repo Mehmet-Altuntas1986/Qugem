@@ -11,6 +11,7 @@ import io.cucumber.java.en_old.Ac;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.Browser;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -312,10 +313,19 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
         actions.doubleClick(el_startDate).sendKeys(Keys.LEFT, Keys.LEFT, "03", "09", "2023").build().perform();
 
         for (int i = 0; i <= 8; i++) {
-            actions.moveToElement(el_startKm).click().sendKeys(Keys.BACK_SPACE);
+            actions.moveToElement(el_startKm).click().sendKeys(Keys.BACK_SPACE).build().perform();
         }
 
-        actions.sendKeys(startKm, Keys.ENTER).build().perform();
+        //click the save button
+        actions.click(el_startKm ).sendKeys(startKm).build().perform();
+        actions.moveToElement(el_startKm).click().build().perform();
+        actions.sendKeys(Keys.ENTER).build().perform();
+
+
+
+       // WebElement save_btn_in_usage=driver.findElement(By.xpath("//span[.='Save']"));
+       // BrowserUtils.clickWithActionsByMovingToElement(save_btn_in_usage);
+
 
 
         BrowserUtils.waitFor(1);
@@ -350,7 +360,7 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
     @Then("click Usage button in the related car plate row found")
     public void clickUsageButtonInTheRelatedCarPlateRowFound () {
         WebElement el_Usage = Any_Element_in_Vehicle_List("AS 20 150", "Usage");
-       el_Usage.click();
+       new Actions(driver).moveToElement(el_Usage).click().build().perform();
         BrowserUtils.waitFor(2);
     }
 
@@ -432,7 +442,8 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
 
     @Then("click the edit button in the section of usage") public void clickTheEditButtonInTheSectionOfUsage ()
     {
-        driver.findElement(By.xpath("//span[normalize-space()='Edit']")).click();
+       WebElement el_editInUsage= driver.findElement(By.xpath("//span[normalize-space()='Edit']"));
+       new Actions(driver).moveToElement(el_editInUsage).click().build().perform();
     }
 
 
