@@ -9,6 +9,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en_old.Ac;
 import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.Browser;
@@ -403,21 +404,24 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
     @Then("verify saved Drivers are seen in the Vehicle List")
     public void verifySavedDriversAreSeenInTheVehicleList () {
 
-        WebElement Driver_El_In_Plate_row = driver.findElement(By.xpath("//tbody//tr//td[.='AS 20 150']/following-sibling::td[4]"));
-        if (Driver_El_In_Plate_row.getText().contains("Rumen") && Driver_El_In_Plate_row.getText().contains("Frank")) {
-            assert true;
-        } else {
-            assert false;
-        }
+        WebElement driverElInPlateRow = driver.findElement(By.xpath("//tbody//tr//td[.='AS 20 150']/following-sibling::td[4]"));
+
+        Assertions.assertAll("Verify saved drivers are seen",
+                () -> Assertions.assertTrue(driverElInPlateRow.getText().contains("Aleksandar Aleksandar")),
+                () -> Assertions.assertTrue(driverElInPlateRow.getText().contains("Florin Florin"))
+        );
+
+        // Test bu noktaya kadar geldiğinde, tüm ifadeler başarılı olsa da olmasa da devam eder.
+        // yani hepsini teker teker bu test adiminda kontrol eder ama feature daki bir sonraki adima bir tanesi hata verirse  gecmez
 
     }
 
     @Then("verify this vehicle is now in use") public void verifyThisVehicleIsNowInUse () {
         WebElement el_InUse_In_the_Plate_row = driver.findElement(By.xpath("//tbody//tr//td[.='AS 20 150']/following-sibling::td[5]"));
-        if (el_InUse_In_the_Plate_row.getText().contains("In use")) {
-            assert true;
+        if (el_InUse_In_the_Plate_row.getText().equalsIgnoreCase("In use")) {
+            Assert.assertTrue(true);
         } else {
-            assert false;
+            Assert.fail();
         }
     }
 
@@ -430,14 +434,13 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
             el_texts.add(usageAddedRowElement.getText());
         }
 
-        if (el_texts.contains("Rumen Rumenov , Frank Löwe") && el_texts.contains("September 03, 2023") && el_texts.contains("In use") && el_texts.contains("12.000 km")) {
-            assert true;
-
-        } else {
-            assert false;
-        }
-
-
+        Assertions.assertAll("Which Asserts are true , Iam checking",
+                ()-> Assertions.assertTrue(el_texts.contains("Alexander Alexander , Florin Florin")),
+                ()-> Assertions.assertTrue(el_texts.contains("September 03, 2023")),
+                ()-> Assertions.assertTrue(el_texts.contains("September 03, 2023")),
+                ()-> Assertions.assertTrue(el_texts.contains("September 03, 2023"))
+//Until here execution continues,even though assertion fails in some of them
+                );
     }
 
     @Then("click the edit button in the section of usage") public void clickTheEditButtonInTheSectionOfUsage ()
@@ -461,10 +464,10 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
     @Then("verify Vehicle status is now Idle in Vehicle List") public void verifyVehicleStatusIsNowIdle () {
         WebElement status_InVehicleList = driver.findElement(By.xpath("//tbody//tr//td[.='AS 20 150']/following-sibling::td[5]"));
         if (status_InVehicleList.equals("Idle")) {
-            assert true;
+            Assert.assertTrue(true);
 
         } else {
-            assert false;
+            Assert.fail();
         }
     }
 
@@ -472,10 +475,11 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
     public void verifyThatPlateASPlateAutoIsNotDisplayedInTheVehicleListAnymore() {
         try {
             WebElement element = driver.findElement(By.xpath("//tbody//tr//td[.='AS 20 150']"));
+            //if element is found, fails
             Assert.fail("Plate AS 20 150 should not be displayed, but it is.");
         } catch (NoSuchElementException e) {
-            assert true;
             // The element was not found, which is the expected behavior
+            Assert.assertTrue(true);
         }
 
     }
@@ -487,11 +491,11 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
                 el_texts.add(usageAddedRowElement.getText());
             }
 
-            if (el_texts.contains("Rumen Rumenov , Frank Löwe") && el_texts.contains("September 03, 2023") && el_texts.contains("In use") && el_texts.contains("12.000 km") && el_texts.contains("2.000 km")) {
-                assert true;
+            if ( el_texts.equals("2.000 km")) {
+               Assert.assertTrue(true);
 
             } else {
-                assert false;
+                Assert.fail("it is not found ,so failed");
             }
         }
 
@@ -500,7 +504,7 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
     public void verifyThatPlateCODJIsDisplayedInTheVehicleList() {
         WebElement el_CODJ140=driver.findElement(By.xpath("//tbody//tr//td[.='CO DJ 140']"));
         if(el_CODJ140.isDisplayed()&&driver.getCurrentUrl().equals("https://qugem-staging.netlify.app/")){
-            assert true;
+            Assert.assertTrue(true);
         }
     }
 
