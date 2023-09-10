@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+
         plugin = {
                 "pretty",
                 "html:target/testReports/htmlReport/htmlReport.html",
@@ -16,6 +17,7 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt"
         },
 
+        stepNotifications = true, // Senaryo adımı bildirimlerini etkinleştir
         monochrome = true,
         publish = true,
 
@@ -23,6 +25,7 @@ import org.junit.runner.RunWith;
         glue = {"com/company/Qugem/stepDefinitions", "com/company/Qugem/hooks"},
         dryRun = false,
         tags = ""
+
 
 )
 public class CukesRunner {

@@ -44,13 +44,14 @@
         </dependency>
 
 
-        <!-- https://mvnrepository.com/artifact/junit/junit -->
 
+        <!-- Junit 5 -->
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
-            <scope>compile</scope>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.10.0</version>
+            <scope>test</scope>
         </dependency>
 
 
