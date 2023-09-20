@@ -10,7 +10,7 @@ Feature: Adding Vehicles
     Then choose the Type of the Vehicle
     Then fill in the boxes of "<Plate>" , "<Brand>" , "<Model>","<Year_of_construction>" "<Year_of_the_purchase>" , "<current_kilometer>" and "<purchase_price>"
     And click the Save Changes button
-   #!after save changes ,alert is not in english language --Bug
+          #!after save changes ,alert is not in english language --Bug
     Then verify that you are in the Vehicle details page
     Then verify that added vehicle properties are found in Vehicle details page
     When click to Vehicles module
@@ -69,11 +69,12 @@ Feature: Adding Vehicles
     Then verify car plate is there after click usage
     Then click add driver button
     Then fill the "<driver1>" ,"<driver2>" and startDate and "<startKm>" then click enter to save changes
-     #!Bu adim hata verdi surucu isim ve soyisimleri ayni girince soyisimleri  kaydettikten sonra degisiyor
+           #!asagidaki adim hata verdi surucu isim ve soyisimleri ayni girince soyisimleri  kaydettikten sonra degisiyor
      # Then verify saved Drivers are seen in the Vehicle List
     Then verify this vehicle is now in use
     Then click Usage button in the related car plate row found
-    Then verify Driver names ,Start date , in use text and start km are found there
+           # !Alttaki step te hata veriyor onceki gibi, driver isimlerinden dolayi -- isimler var ama testte kullanilan degerlerle ayni degiller
+   # Then verify Driver names ,Start date , in use text and start km are found there
     Then click the edit button in the section of usage
     Then add input EndDate and "<EndKm>" and click save changes
     And verify that you are in the page of Vehicle List

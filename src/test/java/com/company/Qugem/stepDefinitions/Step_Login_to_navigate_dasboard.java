@@ -81,7 +81,7 @@ public class Step_Login_to_navigate_dasboard extends Page_login_to_navigate_dash
 
     }
 
-    @And("verify user gets right alert warning -->false {string}")
+    @And("verify user gets right alert warning")
     public void verifyUserGetsRightAlertWarningFalseBitteGebenSieEineKorrekteEMailAdresseEin() {
         WebElement alertInvalidPassword=driver.findElement(By.xpath("//div[contains(text(),'Bitte geben Sie eine korrekte E-Mail-Adresse ein.')]"));
         Assert.assertFalse("user gets a wrong alert",alertInvalidPassword.getText().contains("E-Mail"));

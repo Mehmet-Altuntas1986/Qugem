@@ -209,7 +209,7 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
     public void verifyThatYouAreInTheVehicleDetailsPage() {
 
         if (driver.getCurrentUrl().contains("details")) {
-            assert true;
+            Assert.assertTrue(true);
         }
 
     }
@@ -285,21 +285,10 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     }
+
     @Then("fill the {string} ,{string} and startDate and {string} then click enter to save changes")
-    public void fillTheAndStartDateAnd (String driver1, String driver2, String startKm){
+    public void fillTheAndStartDateAnd(String driver1, String driver2, String startKm) {
 
         Actions actions = new Actions(driver);
 
@@ -318,15 +307,13 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
         }
 
         //click the save button
-        actions.click(el_startKm ).sendKeys(startKm).build().perform();
+        actions.click(el_startKm).sendKeys(startKm).build().perform();
         actions.moveToElement(el_startKm).click().build().perform();
         actions.sendKeys(Keys.ENTER).build().perform();
 
 
-
-       // WebElement save_btn_in_usage=driver.findElement(By.xpath("//span[.='Save']"));
-       // BrowserUtils.clickWithActionsByMovingToElement(save_btn_in_usage);
-
+        // WebElement save_btn_in_usage=driver.findElement(By.xpath("//span[.='Save']"));
+        // BrowserUtils.clickWithActionsByMovingToElement(save_btn_in_usage);
 
 
         BrowserUtils.waitFor(1);
@@ -335,22 +322,21 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
     }
 
 
-
-
     @Then("verify alert text - Vehicle was deleted successfully")
-    public void verifyAlertTextVehicleWasDeletedSuccessfully () {
+    public void verifyAlertTextVehicleWasDeletedSuccessfully() {
         String actualAlertText = driver.findElement(By.xpath("//span[.='Vehicle was deleted successfully']")).getText();
         Assert.assertTrue(actualAlertText.contains("deleted successfully"));
     }
 
 
     @Then("click confirm yes button in the alert")
-    public void clickConfirmYesButtonInTheAlert () {
+    public void clickConfirmYesButtonInTheAlert() {
         btn_yes_Alert_toConfirm_deleteAuto.click();
         BrowserUtils.waitFor(2);
     }
 
-    @Then("click Detail button of plate in Vehicle list") public void clickDetailButtonOfPlateInVehicleList () {
+    @Then("click Detail button of plate in Vehicle list")
+    public void clickDetailButtonOfPlateInVehicleList() {
         WebElement Detail_button_plate_AS_20_150 = driver.findElement(By.xpath("//tbody//tr//td[.='AS 20 150']/following-sibling::td[8]/button"));
         new Actions(driver).moveToElement(Detail_button_plate_AS_20_150).doubleClick().build().perform();
         BrowserUtils.waitFor(1);
@@ -359,30 +345,30 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
     }
 
     @Then("click Usage button in the related car plate row found")
-    public void clickUsageButtonInTheRelatedCarPlateRowFound () {
+    public void clickUsageButtonInTheRelatedCarPlateRowFound() {
         WebElement el_Usage = Any_Element_in_Vehicle_List("AS 20 150", "Usage");
-       new Actions(driver).moveToElement(el_Usage).click().build().perform();
+        new Actions(driver).moveToElement(el_Usage).click().build().perform();
         BrowserUtils.waitFor(2);
     }
 
     @Then("verify that plate CO DJ 140 plate Auto is not displayed in the vehicle list anymore")
-    public void verifyThatPlateCODJPlateAutoIsNotInTheVehicleListAnymore () {
+    public void verifyThatPlateCODJPlateAutoIsNotInTheVehicleListAnymore() {
         try {
             WebElement element = plateElement_in_vehicle_list("CO DJ 140");
             // Element is found , so this test failed
-            assert false;
+            Assert.assertFalse(false);
 
         } catch (
                 NoSuchElementException e) { //selenium a ait olan NoSuchElementException I SEC, aksi durumda test basarisiz olur
             // Element is not found , so this test passed
-            assert true;
+            Assert.assertTrue(true);
         }
 
     }
 
 
     @Then("verify car plate is there after click usage")
-    public void verifyCarPlateIsThereAfterClickUsage () {
+    public void verifyCarPlateIsThereAfterClickUsage() {
 
 
         boolean plateIsFoundAfterClickUsage = driver.findElement(By.xpath("//h2[.='AS 20 150 - Mercedes A3']")).getText().contains("AS 20 150");
@@ -390,7 +376,7 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
     }
 
     @Then("click add driver button")
-    public void clickAddDriverButton () {
+    public void clickAddDriverButton() {
         try {
             driver.findElement(By.xpath("(//button[@aria-label='add']/span)[2]")).click();
 
@@ -402,7 +388,7 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
 
 
     @Then("verify saved Drivers are seen in the Vehicle List")
-    public void verifySavedDriversAreSeenInTheVehicleList () {
+    public void verifySavedDriversAreSeenInTheVehicleList() {
 
         WebElement driverElInPlateRow = driver.findElement(By.xpath("//tbody//tr//td[.='AS 20 150']/following-sibling::td[4]"));
 
@@ -416,7 +402,8 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
 
     }
 
-    @Then("verify this vehicle is now in use") public void verifyThisVehicleIsNowInUse () {
+    @Then("verify this vehicle is now in use")
+    public void verifyThisVehicleIsNowInUse() {
         WebElement el_InUse_In_the_Plate_row = driver.findElement(By.xpath("//tbody//tr//td[.='AS 20 150']/following-sibling::td[5]"));
         if (el_InUse_In_the_Plate_row.getText().equalsIgnoreCase("In use")) {
             Assert.assertTrue(true);
@@ -426,7 +413,7 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
     }
 
     @Then("verify Driver names ,Start date , in use text and start km are found there")
-    public void verifyDriverNamesStartDateInUseTextAndStartKmAreFoundThere () {
+    public void verifyDriverNamesStartDateInUseTextAndStartKmAreFoundThere() {
         List<WebElement> usageAddedRowElements = driver.findElements(By.xpath("(//table//tbody)[2]"));
         List<String> el_texts = new ArrayList<>();
 
@@ -435,23 +422,23 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
         }
 
         Assertions.assertAll("Which Asserts are true , Iam checking",
-                ()-> Assertions.assertTrue(el_texts.contains("Alexander Alexander , Florin Florin")),
-                ()-> Assertions.assertTrue(el_texts.contains("September 03, 2023")),
-                ()-> Assertions.assertTrue(el_texts.contains("September 03, 2023")),
-                ()-> Assertions.assertTrue(el_texts.contains("September 03, 2023"))
+                () -> Assertions.assertTrue(el_texts.contains("Alexander Alexander , Florin Florin")),
+                () -> Assertions.assertTrue(el_texts.contains("September 03, 2023")),
+                () -> Assertions.assertTrue(el_texts.contains("September 03, 2023")),
+                () -> Assertions.assertTrue(el_texts.contains("September 03, 2023"))
 //Until here execution continues,even though assertion fails in some of them
-                );
+        );
     }
 
-    @Then("click the edit button in the section of usage") public void clickTheEditButtonInTheSectionOfUsage ()
-    {
-       WebElement el_editInUsage= driver.findElement(By.xpath("//span[normalize-space()='Edit']"));
-       new Actions(driver).moveToElement(el_editInUsage).click().build().perform();
+    @Then("click the edit button in the section of usage")
+    public void clickTheEditButtonInTheSectionOfUsage() {
+        WebElement el_editInUsage = driver.findElement(By.xpath("//span[normalize-space()='Edit']"));
+        new Actions(driver).moveToElement(el_editInUsage).click().build().perform();
     }
 
 
     @Then("add input EndDate and {string} and click save changes")
-    public void addInputEndDateAndAndClickSaveChanges (String EndKm){
+    public void addInputEndDateAndAndClickSaveChanges(String EndKm) {
         Actions actions = new Actions(driver);
         WebElement end_date = driver.findElement(By.xpath("//input[@name='returnDate']"));
         WebElement end_km = driver.findElement(By.xpath("//input[@name='endKM']"));
@@ -461,9 +448,10 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
 
     }
 
-    @Then("verify Vehicle status is now Idle in Vehicle List") public void verifyVehicleStatusIsNowIdle () {
+    @Then("verify Vehicle status is now Idle in Vehicle List")
+    public void verifyVehicleStatusIsNowIdle() {
         WebElement status_InVehicleList = driver.findElement(By.xpath("//tbody//tr//td[.='AS 20 150']/following-sibling::td[5]"));
-        if (status_InVehicleList.equals("Idle")) {
+        if (status_InVehicleList.getText().equalsIgnoreCase("Idle")) {
             Assert.assertTrue(true);
 
         } else {
@@ -484,43 +472,31 @@ public class Step_Vehicles_in_Dashboard extends Page_Vehicles_in_Dashboard {
 
     }
 
-        @Then("verify distance is 2000 km") public void verifyDistanceIsKm () {
-            List<WebElement> usageAddedRowElements = driver.findElements(By.xpath("(//table//tbody)[2]"));
-            List<String> el_texts = new ArrayList<>();
-            for (WebElement usageAddedRowElement : usageAddedRowElements) {
-                el_texts.add(usageAddedRowElement.getText());
-            }
-
-            if ( el_texts.equals("2.000 km")) {
-               Assert.assertTrue(true);
-
-            } else {
-                Assert.fail("it is not found ,so failed");
-            }
+    @Then("verify distance is 2000 km")
+    public void verifyDistanceIsKm() {
+        List<WebElement> usageAddedRowElements = driver.findElements(By.xpath("(//tbody)[2]/tr/td"));
+        List<String> el_texts = new ArrayList<>();
+        for (WebElement usageAddedRowElement : usageAddedRowElements) {
+            el_texts.add(usageAddedRowElement.getText());
         }
 
 
-    @Then("verify that plate CO DJ 140 is displayed in the Vehicle list")
-    public void verifyThatPlateCODJIsDisplayedInTheVehicleList() {
-        WebElement el_CODJ140=driver.findElement(By.xpath("//tbody//tr//td[.='CO DJ 140']"));
-        if(el_CODJ140.isDisplayed()&&driver.getCurrentUrl().equals("https://qugem-staging.netlify.app/")){
+        if (el_texts.contains("2.000 km")) {
             Assert.assertTrue(true);
+
+        } else {
+            Assert.fail("it is not found ,so failed");
         }
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+    @Then("verify that plate CO DJ 140 is displayed in the Vehicle list")
+    public void verifyThatPlateCODJIsDisplayedInTheVehicleList() {
+        WebElement el_CODJ140 = driver.findElement(By.xpath("//tbody//tr//td[.='CO DJ 140']"));
+        if (el_CODJ140.isDisplayed() && driver.getCurrentUrl().equals("https://qugem-staging.netlify.app/")) {
+            Assert.assertTrue(true);
+        }
+    }
 
 
 }

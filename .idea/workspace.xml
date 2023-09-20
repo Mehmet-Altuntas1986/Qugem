@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="046edeb6-afa5-4b95-9a5b-0435f8665ad9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/Qugem/stepDefinitions/Step_Login_to_navigate_dasboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/Qugem/stepDefinitions/Step_Login_to_navigate_dasboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/company/Qugem/stepDefinitions/Step_Vehicles_in_Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/Qugem/stepDefinitions/Step_Vehicles_in_Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/Qugem/testRunners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/Qugem/testRunners/CukesRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/DasboardNavigate.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/DasboardNavigate.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Vehicles_in_Dashboard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Vehicles_in_Dashboard.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +52,26 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: 8-Add vehicle and assign drivers to this vehicle , then verify , they are seen in the vehicle List">
+  <component name="RunManager" selected="Cucumber Java.Feature: Vehicles_in_Dashboard">
+    <configuration name="Feature: DasboardNavigate" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/DasboardNavigate.feature" />
+      <option name="GLUE" value="com.company.Qugem.stepDefinitions com.company.Qugem.hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="QUGEM_Selenium_Cucumber" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: DasboardNavigate" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: Vehicles_in_Dashboard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Vehicles_in_Dashboard.feature" />
@@ -110,9 +128,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: 8-Add vehicle and assign drivers to this vehicle , then verify , they are seen in the vehicle List" />
         <item itemvalue="Cucumber Java.Feature: Vehicles_in_Dashboard" />
+        <item itemvalue="Cucumber Java.Feature: DasboardNavigate" />
         <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="Cucumber Java.Scenario: 8-Add vehicle and assign drivers to this vehicle , then verify , they are seen in the vehicle List" />
       </list>
     </recent_temporary>
   </component>
