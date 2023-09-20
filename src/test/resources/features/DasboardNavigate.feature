@@ -1,4 +1,4 @@
-@wip
+
 Feature:Testing Navigation Success with valid and invalid credentials
 
   Background:
@@ -11,8 +11,6 @@ Feature:Testing Navigation Success with valid and invalid credentials
     Then verify that dashboard page tab name contains QUGEM
     Then Click the sign out button
 
-    #Then sign out to come back to login page
-
 
 
   Scenario Outline:2- User cannot login with invalid passwords and valid email
@@ -20,7 +18,8 @@ Feature:Testing Navigation Success with valid and invalid credentials
     Then Enter an invalid "<password>"
     Then Click the login button after choosing english language
     And  Verify that user is not on the Dasboard Page after clicking login
-    And  verify user gets right alert warning -->false 'Bitte geben Sie eine korrekte E-Mail-Adresse ein.'
+        #!'Bitte geben Sie eine korrekte E-Mail-Adresse ein.'   2 tane bug --it had to be english  and  warning should be for password , not for email
+    And  verify user gets right alert warning
 
 
     Examples:
