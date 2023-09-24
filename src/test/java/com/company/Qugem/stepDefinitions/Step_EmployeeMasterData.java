@@ -6,6 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.WebElement;
 
 public class Step_EmployeeMasterData extends Page_EmployeeMasterData {
 
@@ -50,4 +51,26 @@ public class Step_EmployeeMasterData extends Page_EmployeeMasterData {
         Assert.assertTrue(Add_new_employees_plus_buttonSign.isEnabled());
 
     }
+
+    @Given("Verify employees table column titles are all displayed")
+    public void verifyEmployeesTableColumnTitlesAreAllDisplayed() {
+        boolean allTitlesDisplayed = true;
+
+        for (WebElement employeesTableTitle : Employees_TableTitles) {
+            if (!employeesTableTitle.isDisplayed()) {
+                System.out.println("employeesTableTitle.getText() = " + employeesTableTitle.getText());
+                allTitlesDisplayed = false;
+            }
+        }
+
+        Assert.assertTrue("not all column titles are displayed", allTitlesDisplayed);
+
+    }
+
+
+
+
+
+
+
 }

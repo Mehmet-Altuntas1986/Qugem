@@ -11,3 +11,6 @@ Feature:Employee Master Data - Employee information page tests
   Scenario: Verify Add new personal button is clickable and displayed
     Given verify that add personal button is displayed
     Then  verify that add personal button is enabled-functional
+
+  Scenario: Verify Employees Table titles are displayed
+    Given Verify employees table column titles are all displayed
