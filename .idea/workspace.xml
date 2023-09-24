@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="046edeb6-afa5-4b95-9a5b-0435f8665ad9" name="Changes" comment="employee personal add button is functional">
+    <list default="true" id="046edeb6-afa5-4b95-9a5b-0435f8665ad9" name="Changes" comment="employees table column titles are all displayed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/company/Qugem/stepDefinitions/Step_EmployeeMasterData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/Qugem/stepDefinitions/Step_EmployeeMasterData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" afterDir="false" />
@@ -58,26 +58,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Verify Employees Table titles are displayed">
-    <configuration name="Feature: EmployeeMasterData" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" />
-      <option name="GLUE" value="com.company.Qugem.hooks" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="QUGEM_Selenium_Cucumber" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: EmployeeMasterData" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cucumber Java.Scenario: Verifying Table Filter elements functionality">
     <configuration name="Scenario: Verify Add new personal button is clickable and displayed" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" />
@@ -138,6 +119,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: Verifying Table Filter elements functionality" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" />
+      <option name="GLUE" value="com.company.Qugem.stepDefinitions com.company.Qugem.hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="QUGEM_Selenium_Cucumber" />
+      <option name="NAME_FILTER" value="^Verifying Table Filter elements functionality$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verifying Table Filter elements functionality$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verifying Table Filter elements functionality" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" />
@@ -160,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Verifying Table Filter elements functionality" />
         <item itemvalue="Cucumber Java.Scenario: Verify Employees Table titles are displayed" />
         <item itemvalue="Cucumber Java.Scenario: Verify Add new personal button is clickable and displayed" />
         <item itemvalue="Cucumber Java.Scenario: Verify Employee Information and employees Table Title Display" />
         <item itemvalue="Cucumber Java.Scenario: " />
-        <item itemvalue="Cucumber Java.Feature: EmployeeMasterData" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695585185497</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="employees table column titles are all displayed">
+      <created>1695586545110</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695586545110</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,7 +208,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="employee personal add button is functional" />
-    <option name="LAST_COMMIT_MESSAGE" value="employee personal add button is functional" />
+    <MESSAGE value="employees table column titles are all displayed" />
+    <option name="LAST_COMMIT_MESSAGE" value="employees table column titles are all displayed" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/BasePage_java$CukesRunner.ic" NAME="CukesRunner Coverage Results" MODIFIED="1693828285324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
