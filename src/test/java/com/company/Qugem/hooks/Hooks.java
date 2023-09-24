@@ -13,12 +13,11 @@ public class Hooks extends AbstractBasePage {
 
     @BeforeAll()
 
-        public static   void Before_AllTests_I_Run(){
+        public static void Before_AllTests_I_Run_Once(){
             if (driver==null || driver!=Driver.getDriver()){
                 driver=Driver.getDriver();
             }
 
-            // NavigateToDashBoard(lct_choose_language_english);
         }
 
    // @Before: This annotation is used to perform setup actions before each scenario.
