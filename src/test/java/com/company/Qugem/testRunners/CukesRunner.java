@@ -24,7 +24,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = {"com/company/Qugem/stepDefinitions", "com/company/Qugem/hooks"},
         dryRun = false,
-        tags = ""
+        tags = "a"
 
 
 )

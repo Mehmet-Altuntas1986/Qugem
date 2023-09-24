@@ -30,8 +30,7 @@ public class Page_Vehicles_in_Dashboard extends AbstractBasePage {
     protected By lct_plus_sign_button = By.xpath("//span[@class='MuiFab-label']");
 
     @FindBy(xpath = "//span[@class='MuiFab-label']")
-    protected
-    WebElement btn_plus_sign_button;
+    protected WebElement btn_plus_sign_button;
 
 
 
