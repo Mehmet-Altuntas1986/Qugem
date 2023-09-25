@@ -31,6 +31,7 @@ public class Step_Login_to_navigate_dasboard extends Page_login_to_navigate_dash
     public void enterAValidEmail() {
         driver.findElement(lct_inputbox_emailbox).sendKeys(ConfigurationReader.getProperty("admin_username"));
     }
+
     @Then("Enter a valid password")
     public void enterAValidPassword() {
         driver.findElement(lct_inputbox_password).sendKeys(ConfigurationReader.getProperty("admin_password"));
@@ -50,8 +51,8 @@ public class Step_Login_to_navigate_dasboard extends Page_login_to_navigate_dash
 
     @And("Verify that user is now on the Dasboard Page after clicking login")
     public void getThePopUpTextLoginIsSuccessful() {
-        String expectedUrlAfterNavigation="https://qugem-staging.netlify.app/";
-        Assert.assertEquals("user is now in the dashboard page",expectedUrlAfterNavigation,driver.getCurrentUrl());
+        String expectedUrlAfterNavigation = "https://qugem-staging.netlify.app/";
+        Assert.assertEquals("user is now in the dashboard page", expectedUrlAfterNavigation, driver.getCurrentUrl());
 
     }
 
@@ -59,11 +60,9 @@ public class Step_Login_to_navigate_dasboard extends Page_login_to_navigate_dash
     @Then("verify that dashboard page tab name contains QUGEM")
     public void verifyThatDashboardPageTabNameIsQUICKLYQUGEM() {
 
-        Assert.assertTrue(driver.getTitle().contains("QUGEM") );
+        Assert.assertTrue(driver.getTitle().contains("QUGEM"));
 
     }
-
-
 
 
     @Then("Enter an invalid {string}")
@@ -76,23 +75,21 @@ public class Step_Login_to_navigate_dasboard extends Page_login_to_navigate_dash
     @And("Verify that user is not on the Dasboard Page after clicking login")
     public void verifyThatUserIsNotOnTheDasboardPageAfterClickingLogin() {
 
-        String unexpectedUrlAfterNavigation="https://qugem-staging.netlify.app";
-        Assert.assertNotEquals( unexpectedUrlAfterNavigation,driver.getCurrentUrl());
+        String unexpectedUrlAfterNavigation = "https://qugem-staging.netlify.app";
+        Assert.assertNotEquals(unexpectedUrlAfterNavigation, driver.getCurrentUrl());
 
     }
 
     @And("verify user gets right alert warning")
     public void verifyUserGetsRightAlertWarningFalseBitteGebenSieEineKorrekteEMailAdresseEin() {
-        WebElement alertInvalidPassword=driver.findElement(By.xpath("//div[contains(text(),'Bitte geben Sie eine korrekte E-Mail-Adresse ein.')]"));
-        Assert.assertFalse("user gets a wrong alert",alertInvalidPassword.getText().contains("E-Mail"));
+        WebElement alertInvalidPassword = driver.findElement(By.xpath("//div[contains(text(),'Bitte geben Sie eine korrekte E-Mail-Adresse ein.')]"));
+        Assert.assertFalse("user gets a wrong alert", alertInvalidPassword.getText().contains("E-Mail"));
     }
-
-
 
 
     @Then("verify that user gets an alert that pasword \"Must be at least 6 characters long\"")
     public void verifyThatUserGetsAnAlert() {
-        WebElement alertShortPasword=driver.findElement(By.xpath("//p[contains(text(),'Must be at least 6 characters long')]"));
+        WebElement alertShortPasword = driver.findElement(By.xpath("//p[contains(text(),'Must be at least 6 characters long')]"));
         Assert.assertEquals("Must be at least 6 characters long", alertShortPasword.getText());
     }
 
@@ -101,20 +98,18 @@ public class Step_Login_to_navigate_dasboard extends Page_login_to_navigate_dash
         //first click Max Musterman button but possible after it is visible or clickable
 
 
-       BrowserUtils.clickWithJS_withoutScrollIntoView(btn_MaxMusterman);
-       // btn_MaxMusterman.click();
-       BrowserUtils.clickWithJS_withoutScrollIntoView(btn_SignOut);
-       // btn_SignOut.click();
-       // new Actions(driver).click(btn_MaxMusterman);
-       // new Actions(driver).click(btn_SignOut);
-
+        BrowserUtils.clickWithJS_withoutScrollIntoView(btn_MaxMusterman);
+        // btn_MaxMusterman.click();
+        BrowserUtils.clickWithJS_withoutScrollIntoView(btn_SignOut);
+        // btn_SignOut.click();
+        // new Actions(driver).click(btn_MaxMusterman);
+        // new Actions(driver).click(btn_SignOut);
 
 
         Assert.assertEquals("user is again on the sign in webpage", "https://qugem-staging.netlify.app/auth/sign-in", driver.getCurrentUrl());
 
 
     }
-
 
 
 }

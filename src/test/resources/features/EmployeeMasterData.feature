@@ -15,7 +15,7 @@ Feature:Employee Master Data - Employee information page tests
   Scenario: Verify Employees Table titles are displayed
     Given Verify employees table column titles are all displayed
 
-  Scenario: Verifying Table Filter elements functionality
+  Scenario Outline: Verifying Table Filter elements functionality
     When user uses "<No_filter>", personal No comes to first row and first column of table
     When user uses "<first_name_filter>", personal name comes to first row and second column of table
     When user uses "<last_name_filter>" , personal lastname comes to first row and third column of table
@@ -25,9 +25,17 @@ Feature:Employee Master Data - Employee information page tests
       | 933       | Irfan             | Erdogdu          |
 
 
-Scenario: Verify line per page max personal number works expected
-  When user clicks lines per page select arrow
-  Then choose and clicks 10 personal for the employee page table list
-  Then verify that employee table body doesnt have more than 10 row lists personals
+  Scenario Outline: Verify the functionality of "Lines Per Page" selection
 
+    When the user clicks the Lines Per Page select arrow
+    And  chooses a <number_of_personal>, click and verify list doesn't have more than this number of personal
 
+    Examples:
+      | number_of_personal |
+      | 10                 |
+      | 25                 |
+      | 50                 |
+
+  Scenario: Verify that when we click next page arrow , user is still in the employee list page
+    When user clicks the next page arrow in employee list
+    And user is still in the employee list page that has Employees tableTitle

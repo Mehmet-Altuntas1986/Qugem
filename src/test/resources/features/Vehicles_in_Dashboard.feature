@@ -1,5 +1,5 @@
-
 Feature: Adding Vehicles
+
   Background:
     When Navigate to DashboardPage with English language
     When click to Vehicles module
@@ -90,7 +90,7 @@ Feature: Adding Vehicles
     Then verify that plate AS 20 150 plate Auto is not displayed in the vehicle list anymore
 
     Examples:
-      | Plate     | Brand    | Model | Year_of_construction | Year_of_the_purchase | current_kilometer | purchase_price | driver1     | driver2     | startKm | EndKm |
+      | Plate     | Brand    | Model | Year_of_construction | Year_of_the_purchase | current_kilometer | purchase_price | driver1               | driver2       | startKm | EndKm |
       | AS 20 150 | Mercedes | A3    | 2010                 | 2015                 | 80000             | 20000          | Aleksandar Aleksandar | Florin Florin | 12000   | 14000 |
 
 
