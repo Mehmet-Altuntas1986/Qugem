@@ -6,21 +6,20 @@ import io.cucumber.java.*;
 import org.openqa.selenium.*;
 
 import java.time.Duration;
+
 public class Hooks extends AbstractBasePage {
-
-
 
 
     @BeforeAll()
 
-        public static void Before_AllTests_I_Run_Once(){
-            if (driver==null || driver!=Driver.getDriver()){
-                driver=Driver.getDriver();
-            }
-
+    public static void Before_AllTests_I_Run_Once() {
+        if (driver == null || driver != Driver.getDriver()) {
+            driver = Driver.getDriver();
         }
 
-   // @Before: This annotation is used to perform setup actions before each scenario.
+    }
+
+    // @Before: This annotation is used to perform setup actions before each scenario.
 
     @Before()   //before every scenario
     public void setUp() {
@@ -36,11 +35,10 @@ public class Hooks extends AbstractBasePage {
     }
 
 
-
     @BeforeStep
     public void beforeStep() {
-        if(driver==null ||driver!=Driver.getDriver()){
-            driver=Driver.getDriver();
+        if (driver == null || driver != Driver.getDriver()) {
+            driver = Driver.getDriver();
         }
 
 
@@ -55,24 +53,23 @@ public class Hooks extends AbstractBasePage {
     // Diğer adımlar ve senaryolar burada tanımlanır.
 
 
-
     @After()
     public void tearDown(Scenario scenario) throws InterruptedException {
         System.out.println("Attach screenshot to html report after a test execution");
         if (scenario.isFailed()) {
-            final byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+            final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", "screenshot");
         }
 
 
-
     }
+
     @AfterAll()
-        public static void closeDriverAfterAllTestsRun(){
-            Driver.closeDriver();
+    public static void closeDriverAfterAllTestsRun() {
+        Driver.closeDriver();
 
-        }
     }
+}
 
 
 

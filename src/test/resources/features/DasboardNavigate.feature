@@ -1,8 +1,8 @@
-
 Feature:Testing Navigation Success with valid and invalid credentials
 
   Background:
     When Navigate to Login Page
+
   Scenario:1-User Logs In, Navigates to Dashboard, and Logs Out
     Then Enter a valid email
     Then Enter a valid password
@@ -10,7 +10,6 @@ Feature:Testing Navigation Success with valid and invalid credentials
     And  Verify that user is now on the Dasboard Page after clicking login
     Then verify that dashboard page tab name contains QUGEM
     Then Click the sign out button
-
 
 
   Scenario Outline:2- User cannot login with invalid passwords and valid email
@@ -37,7 +36,7 @@ Feature:Testing Navigation Success with valid and invalid credentials
     Examples:
       | shortpassword |
       | 12345         |
-      | abc        |
+      | abc           |
 
 
 

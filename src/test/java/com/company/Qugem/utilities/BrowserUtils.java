@@ -15,16 +15,15 @@ import java.util.Random;
 import java.util.Set;
 
 public class BrowserUtils {
-   final private static WebDriver driver=Driver.getDriver();
+    final private static WebDriver driver = Driver.getDriver();
 
     public static WebDriver getMydriver() {
         return driver;
     }
 
 
-
     // Returns a positive random number as integer between 0 to upper bound
-    public static int randomNumber(int bound){
+    public static int randomNumber(int bound) {
         // creating an object of Random class
         Random random = new Random();
         // Generates random integer between 0 to upper bound
@@ -33,13 +32,13 @@ public class BrowserUtils {
     }
 
 
-  //  This method will accept int (in seconds) and execute Thread.sleep for given duration
-    public static void sleep(int second){
+    //  This method will accept int (in seconds) and execute Thread.sleep for given duration
+    public static void sleep(int second) {
 
-        second *=1000;
+        second *= 1000;
         try {
             Thread.sleep(second);
-        }catch (InterruptedException e ) {
+        } catch (InterruptedException e) {
 
         }
     }
@@ -51,11 +50,10 @@ public class BrowserUtils {
         - If condition matches, will break loop.
     Arg3: expectedInTitle to be compared against actualTitle
      */
-    public static void switchWindowAndVerify(String expectedInUrl, String expectedInTitle){
+    public static void switchWindowAndVerify(String expectedInUrl, String expectedInTitle) {
 
 
-
-        Set<String> allWindowsHandles =driver.getWindowHandles();
+        Set<String> allWindowsHandles = driver.getWindowHandles();
 
         for (String each : allWindowsHandles) {
 
@@ -63,7 +61,7 @@ public class BrowserUtils {
 
             System.out.println("Current URL: " + driver.getCurrentUrl());
 
-            if (driver.getCurrentUrl().contains(expectedInUrl)){
+            if (driver.getCurrentUrl().contains(expectedInUrl)) {
                 break;
             }
         }
@@ -76,7 +74,7 @@ public class BrowserUtils {
     /*
     This method accepts a String "expectedTitle" and Asserts if it is true
      */
-    public static void verifyTitle(String expectedTitle){
+    public static void verifyTitle(String expectedTitle) {
 
         Assert.assertEquals(driver.getTitle(), expectedTitle);
 
@@ -84,9 +82,10 @@ public class BrowserUtils {
 
     /**
      * This method will accept a String as expected value and verify actual URL CONTAINS the value.
+     *
      * @param expectedInURL
      */
-    public static void verifyURLContains(String expectedInURL){
+    public static void verifyURLContains(String expectedInURL) {
         Assert.assertTrue(driver.getCurrentUrl().contains(expectedInURL));
     }
 
@@ -94,24 +93,25 @@ public class BrowserUtils {
     /**
      * This method will accept a dropdown as a WebElement
      * and return all the options' text in a List of String.
+     *
      * @param dropdownElement
      * @return List<String> actualOptionsAsString
      */
-    public static List<String> dropdownOptionsAsString(WebElement dropdownElement){
+    public static List<String> dropdownOptionsAsString(WebElement dropdownElement) {
 
         Select select = new Select(dropdownElement);
         //List of all ACTUAL month <options> as a web element
         List<WebElement> actualOptionsAsWebElement = select.getOptions();
 
         //List of all ACTUAL month <options> as a string
-        List<String> actualOptionsAsString= new ArrayList<>();
+        List<String> actualOptionsAsString = new ArrayList<>();
 
         //add each element's text to the actualOptionsAsString List
         for (WebElement each : actualOptionsAsWebElement) {
             actualOptionsAsString.add(each.getText());
         }
 
-        return  actualOptionsAsString;
+        return actualOptionsAsString;
 
     }
 
@@ -119,14 +119,15 @@ public class BrowserUtils {
     /**
      * This method will accept a group radio buttons as a List of WebElement.
      * It will loop through the List, and click to the radio button with provided attributeValue
+     *
      * @param radioButtons
      * @param attributeValue
      */
-    public static void clickRadioButton(List<WebElement> radioButtons, String attributeValue){
+    public static void clickRadioButton(List<WebElement> radioButtons, String attributeValue) {
 
         for (WebElement each : radioButtons) {
 
-            if (each.getAttribute("value").equalsIgnoreCase(attributeValue)){
+            if (each.getAttribute("value").equalsIgnoreCase(attributeValue)) {
                 each.click();
             }
         }
@@ -134,6 +135,7 @@ public class BrowserUtils {
 
     /**
      * Switches to new window by the exact title. Returns to original window if target title not found
+     *
      * @param targetTitle
      */
     public static void switchToWindow(String targetTitle) {
@@ -210,17 +212,16 @@ public class BrowserUtils {
      * @return
      */
     public static WebElement waitForVisibility(WebElement element, int timeToWaitInSec) {
-        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         return wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public static void getElementsFromTagName(WebElement element, String TagName){
+    public static void getElementsFromTagName(WebElement element, String TagName) {
         List<WebElement> elements = element.findElements(By.tagName(TagName));
         for (WebElement e : elements) {
             System.out.println(e.getText());
         }
     }
-
 
 
     /**
@@ -231,7 +232,7 @@ public class BrowserUtils {
      * @return
      */
     public static WebElement waitForVisibility(By locator, int timeout) {
-        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(timeout));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
@@ -255,7 +256,7 @@ public class BrowserUtils {
      * @return
      */
     public static WebElement waitForClickablility(By locator, int timeout) {
-        WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(timeout));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
 
     }
@@ -269,8 +270,8 @@ public class BrowserUtils {
 
         ExpectedCondition<Boolean> expectation = new ExpectedCondition<Boolean>() {
 
-            public  Boolean apply(WebDriver driver) {
-                driver=Driver.getDriver();
+            public Boolean apply(WebDriver driver) {
+                driver = Driver.getDriver();
                 return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
             }
         };
@@ -368,7 +369,7 @@ public class BrowserUtils {
      * @param element
      */
     public static synchronized void clickWithJS_withScrollIntoView(WebElement element) {
-     ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
     }
 
@@ -414,10 +415,11 @@ public class BrowserUtils {
 
     /**
      * Highlighs an element by changing its background and border color
+     *
      * @param element
      */
     public static void highlight(WebElement element) {
-        ((JavascriptExecutor)driver).executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", element);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", element);
         waitFor(1);
         ((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('style', 'background: yellow; border: 2px solid red;');", element);
     }
@@ -509,8 +511,9 @@ public class BrowserUtils {
     }
 
     /**
-     *  checks that an element is present on the DOM of a page. This does not
-     *    * necessarily mean that the element is visible.
+     * checks that an element is present on the DOM of a page. This does not
+     * * necessarily mean that the element is visible.
+     *
      * @param by
      * @param time
      */
@@ -519,12 +522,12 @@ public class BrowserUtils {
     }
 
     /**
-     *  clean input box with keys ,then sendkeys("new value")
-     * @param    inputElement
-     * @param    newInputvalue
-
+     * clean input box with keys ,then sendkeys("new value")
+     *
+     * @param inputElement
+     * @param newInputvalue
      */
-    public static  void cleanInputBoxAndSendNewInput(WebElement inputElement,String newInputvalue){
+    public static void cleanInputBoxAndSendNewInput(WebElement inputElement, String newInputvalue) {
         Actions actions = new Actions(driver);
         actions.moveToElement(inputElement).doubleClick(inputElement).perform();
         inputElement.sendKeys(Keys.chord(Keys.COMMAND, "a")); // IN WINDOWS CONTROL
@@ -533,29 +536,24 @@ public class BrowserUtils {
         inputElement.sendKeys(newInputvalue);
 
     }
+
     /**
-     *  clean input box with javaScript
-     *  this code cleans and gives new value to the input box
-     * @param    inputElement
-     * @param    inputValue
+     * clean input box with javaScript
+     * this code cleans and gives new value to the input box
+     *
+     * @param inputElement
+     * @param inputValue
      */
 
-    public static void cleanInputBoxAndSendNewInputWithJavaScript(WebElement inputElement,String inputValue){
+    public static void cleanInputBoxAndSendNewInputWithJavaScript(WebElement inputElement, String inputValue) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].value = arguments[1];", inputElement, inputValue);
 
-}
+    }
 
-public static void clickWithActionsByMovingToElement(WebElement el)   {
+    public static void clickWithActionsByMovingToElement(WebElement el) {
         new Actions(driver).moveToElement(el).pause(1000).click();
 
-}
-
-
-
-
-
-
-
+    }
 
 
 }

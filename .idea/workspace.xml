@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="046edeb6-afa5-4b95-9a5b-0435f8665ad9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/Qugem/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/Qugem/hooks/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/Qugem/pages/AbstractBasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/Qugem/pages/AbstractBasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/Qugem/pages/Page_EmployeeMasterData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/Qugem/pages/Page_EmployeeMasterData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/Qugem/pages/Page_Vehicles_in_Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/Qugem/pages/Page_Vehicles_in_Dashboard.java" afterDir="false" />
+    <list default="true" id="046edeb6-afa5-4b95-9a5b-0435f8665ad9" name="Changes" comment="lines per page employee list tested">
       <change beforePath="$PROJECT_DIR$/src/test/java/com/company/Qugem/stepDefinitions/Step_EmployeeMasterData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/Qugem/stepDefinitions/Step_EmployeeMasterData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/Qugem/testRunners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/Qugem/testRunners/CukesRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,15 +57,16 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Verify Add new personal button is clickable and displayed">
-    <configuration name="Feature: EmployeeMasterData" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Verify that when we click next page arrow ,  employee table title is still displayed">
+    <configuration name="Scenario: Verify Employees Table titles are displayed" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" />
-      <option name="GLUE" value="com.company.Qugem.hooks" />
+      <option name="GLUE" value="com.company.Qugem.stepDefinitions com.company.Qugem.hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="QUGEM_Selenium_Cucumber" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: EmployeeMasterData" />
+      <option name="NAME_FILTER" value="^Verify Employees Table titles are displayed$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify Employees Table titles are displayed$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify Employees Table titles are displayed" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -83,15 +78,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: 1-U.KN" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Verify that when we click next page arrow ,  employee table title is still displayed" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" />
       <option name="GLUE" value="com.company.Qugem.stepDefinitions com.company.Qugem.hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="QUGEM_Selenium_Cucumber" />
-      <option name="NAME_FILTER" value="^1\-U\.KN$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^1\-U\.KN$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: 1-U.KN" />
+      <option name="NAME_FILTER" value="^Verify that when we click next page arrow \,  employee table title is still displayed$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify that when we click next page arrow \,  employee table title is still displayed$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify that when we click next page arrow ,  employee table title is still displayed" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -103,15 +98,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify Add new personal button is clickable and displayed" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Verify that when we click next page arrow , user is still in the employee list page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" />
       <option name="GLUE" value="com.company.Qugem.stepDefinitions com.company.Qugem.hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="QUGEM_Selenium_Cucumber" />
-      <option name="NAME_FILTER" value="^Verify Add new personal button is clickable and displayed$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify Add new personal button is clickable and displayed$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify Add new personal button is clickable and displayed" />
+      <option name="NAME_FILTER" value="^Verify that when we click next page arrow \, user is still in the employee list page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify that when we click next page arrow \, user is still in the employee list page$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify that when we click next page arrow , user is still in the employee list page" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -123,15 +118,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify Employee Information and employees Table Title Display" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Verify the functionality of &quot;Lines Per Page&quot; selection" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" />
       <option name="GLUE" value="com.company.Qugem.stepDefinitions com.company.Qugem.hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="QUGEM_Selenium_Cucumber" />
-      <option name="NAME_FILTER" value="^Verify Employee Information and employees Table Title Display$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify Employee Information and employees Table Title Display$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify Employee Information and employees Table Title Display" />
+      <option name="NAME_FILTER" value="^Verify the functionality of \&quot;Lines Per Page\&quot; selection$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify the functionality of \&quot;Lines Per Page\&quot; selection$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify the functionality of &quot;Lines Per Page&quot; selection" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -143,15 +138,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Verifying Table Filter elements functionality" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" />
       <option name="GLUE" value="com.company.Qugem.stepDefinitions com.company.Qugem.hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="QUGEM_Selenium_Cucumber" />
-      <option name="NAME_FILTER" value="^$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: " />
+      <option name="NAME_FILTER" value="^Verifying Table Filter elements functionality$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verifying Table Filter elements functionality$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verifying Table Filter elements functionality" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -165,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Verify Add new personal button is clickable and displayed" />
-        <item itemvalue="Cucumber Java.Scenario: Verify Employee Information and employees Table Title Display" />
-        <item itemvalue="Cucumber Java.Scenario: " />
-        <item itemvalue="Cucumber Java.Feature: EmployeeMasterData" />
-        <item itemvalue="Cucumber Java.Scenario: 1-U.KN" />
+        <item itemvalue="Cucumber Java.Scenario: Verify that when we click next page arrow ,  employee table title is still displayed" />
+        <item itemvalue="Cucumber Java.Scenario: Verify that when we click next page arrow , user is still in the employee list page" />
+        <item itemvalue="Cucumber Java.Scenario: Verify the functionality of &quot;Lines Per Page&quot; selection" />
+        <item itemvalue="Cucumber Java.Scenario: Verifying Table Filter elements functionality" />
+        <item itemvalue="Cucumber Java.Scenario: Verify Employees Table titles are displayed" />
       </list>
     </recent_temporary>
   </component>
@@ -182,6 +177,35 @@
       <option name="presentableId" value="Default" />
       <updated>1694362392622</updated>
     </task>
+    <task id="LOCAL-00001" summary="employee personal add button is functional">
+      <created>1695585185497</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695585185497</updated>
+    </task>
+    <task id="LOCAL-00002" summary="employees table column titles are all displayed">
+      <created>1695586545110</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695586545110</updated>
+    </task>
+    <task id="LOCAL-00003" summary="employee page filters functionality tested">
+      <created>1695590482441</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695590482441</updated>
+    </task>
+    <task id="LOCAL-00004" summary="lines per page employee list tested">
+      <created>1695641801629</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695641801630</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +218,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="employee personal add button is functional" />
+    <MESSAGE value="employees table column titles are all displayed" />
+    <MESSAGE value="employee page filters functionality tested" />
+    <MESSAGE value="lines per page employee list tested" />
+    <option name="LAST_COMMIT_MESSAGE" value="lines per page employee list tested" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/BasePage_java$CukesRunner.ic" NAME="CukesRunner Coverage Results" MODIFIED="1693828285324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

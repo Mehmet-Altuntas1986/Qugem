@@ -15,9 +15,9 @@ import org.openqa.selenium.safari.SafariDriver;
 public class Driver {
 
 
-   // Creating a private constructor, so we are closing  access to the object of this class from outside the class
+    // Creating a private constructor, so we are closing  access to the object of this class from outside the class
 
-    private Driver(){
+    private Driver() {
     }
 
     private static InheritableThreadLocal<WebDriver> driverPool = new InheritableThreadLocal<>();
@@ -25,9 +25,9 @@ public class Driver {
     /*
     Create a re-usable utility method which will return same driver instance when we call it
      */
-    public static WebDriver getDriver(){
+    public static WebDriver getDriver() {
 
-        if (driverPool.get() == null){
+        if (driverPool.get() == null) {
             String browser =
                     System.getProperty("browser") != null
                             ? browser = System.getProperty("browser")
@@ -35,12 +35,12 @@ public class Driver {
 
             switch (browser) {
 
-                case "chrome" ->{
+                case "chrome" -> {
                     driverPool.set(new ChromeDriver());
                     break;
                 }
 
-                case "chrome-headless"->{
+                case "chrome-headless" -> {
                     WebDriverManager.chromedriver().setup();
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("--headless=new");
@@ -48,13 +48,13 @@ public class Driver {
                     break;
                 }
 
-                case "firefox"->{
-                   // WebDriverManager.firefoxdriver().setup();
+                case "firefox" -> {
+                    // WebDriverManager.firefoxdriver().setup();
                     driverPool.set(new FirefoxDriver());
                     break;
                 }
 
-                case "firefox-headless"->{
+                case "firefox-headless" -> {
                     //WebDriverManager.firefoxdriver().setup();
                     FirefoxOptions op = new FirefoxOptions();
                     op.addArguments("-headless");
@@ -63,7 +63,7 @@ public class Driver {
                 }
 
 
-                case "ie"->{
+                case "ie" -> {
 
                     if (!System.getProperty("os.name").toLowerCase().contains("windows"))
                         throw new WebDriverException("Your OS doesn't support Internet Explorer");
@@ -73,7 +73,7 @@ public class Driver {
                 }
 
 
-                case "edge"->{
+                case "edge" -> {
                     if (!System.getProperty("os.name").toLowerCase().contains("windows"))
                         throw new WebDriverException("Your OS doesn't support Edge");
 
@@ -87,7 +87,7 @@ public class Driver {
                 }
 
 
-                case "edge-headless"->{
+                case "edge-headless" -> {
 
                     EdgeOptions opt = new EdgeOptions();
                     opt.addArguments("--headless=new");
@@ -95,8 +95,7 @@ public class Driver {
                 }
 
 
-
-                case "safari"->{
+                case "safari" -> {
                     //In safari browser , in developer section , we should allow test automation , then we can use
                     if (!System.getProperty("os.name").toLowerCase().contains("mac"))
                         throw new WebDriverException("Your OS doesn't support Safari");

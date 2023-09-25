@@ -33,8 +33,6 @@ public class Page_Vehicles_in_Dashboard extends AbstractBasePage {
     protected WebElement btn_plus_sign_button;
 
 
-
-
 //!After clicking + plus add sign button --locaters and elements
 
 
@@ -104,6 +102,7 @@ public class Page_Vehicles_in_Dashboard extends AbstractBasePage {
     public WebElement plateElement_in_vehicle_list(String plate) {
         return driver.findElement(By.xpath("//tbody//tr//td[contains(.,'" + plate + "')]"));
     }
+
     public WebElement detailElementbelongsToRowNumber_in_vehicle_list(int row) {
         return driver.findElement(By.xpath("//tbody//tr[" + row + "]//td[.='Detail']"));
     }
@@ -111,7 +110,7 @@ public class Page_Vehicles_in_Dashboard extends AbstractBasePage {
 
     public WebElement Any_Element_in_Vehicle_List(String plateNumber, String clikableElementName) {
         try {
-            return driver.findElement(By.xpath("//tbody//tr//td[.='"+plateNumber+"']/following-sibling::td[.='"+clikableElementName+"']"));
+            return driver.findElement(By.xpath("//tbody//tr//td[.='" + plateNumber + "']/following-sibling::td[.='" + clikableElementName + "']"));
         } catch (NoSuchElementException e) {
 
             throw new NoSuchElementException("Element not found: " + plateNumber + " - " + clikableElementName);
@@ -141,7 +140,7 @@ public class Page_Vehicles_in_Dashboard extends AbstractBasePage {
     protected WebElement btn_delete_addedAuto;
 
 
-//!  to delete an added auto
+    //!  to delete an added auto
     @FindAll({
             @FindBy(xpath = "//span[.='yes']"),
             @FindBy(xpath = "//span[.='yes']/..")
@@ -153,10 +152,6 @@ public class Page_Vehicles_in_Dashboard extends AbstractBasePage {
             @FindBy(xpath = "//span[.='Delete']/..")
     })
     protected WebElement btn_delete_added_auto;
-
-
-
-
 
 
 }
