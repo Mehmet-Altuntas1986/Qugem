@@ -133,4 +133,9 @@ public class Step_EmployeeMasterData extends Page_EmployeeMasterData {
     public void userIsStillInTheEmployeeListPageThatHasEmployeesTableTitle() {
         Assert.assertTrue(Employees.isDisplayed());
     }
+
+    @And("verify that url didn't change")
+    public void verifyThatUrlDidnTChange() {
+        Assert.assertTrue(driver.getCurrentUrl().equals("https://qugem-staging.netlify.app/employee"));
+    }
 }

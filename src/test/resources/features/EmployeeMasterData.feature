@@ -36,6 +36,7 @@ Feature:Employee Master Data - Employee information page tests
       | 25                 |
       | 50                 |
 
-  Scenario: Verify that when we click next page arrow , user is still in the employee list page
+  Scenario: Verify that when we click next page arrow ,  employee table title is still displayed
     When user clicks the next page arrow in employee list
     And user is still in the employee list page that has Employees tableTitle
+    And verify that url didn't change
