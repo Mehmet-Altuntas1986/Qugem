@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="046edeb6-afa5-4b95-9a5b-0435f8665ad9" name="Changes" comment="lines per page employee list tested">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/Qugem/stepDefinitions/Step_EmployeeMasterData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/Qugem/stepDefinitions/Step_EmployeeMasterData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" afterDir="false" />
-    </list>
+    <list default="true" id="046edeb6-afa5-4b95-9a5b-0435f8665ad9" name="Changes" comment="lines per page employee list tested" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
