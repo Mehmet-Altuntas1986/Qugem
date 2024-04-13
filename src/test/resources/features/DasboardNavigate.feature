@@ -2,7 +2,7 @@ Feature:Testing Navigation Success with valid and invalid credentials
 
   Background:
     When Navigate to Login Page
-
+@smoke
   Scenario:1-User Logs In, Navigates to Dashboard, and Logs Out
     Then Enter a valid email
     Then Enter a valid password
