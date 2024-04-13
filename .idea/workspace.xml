@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="046edeb6-afa5-4b95-9a5b-0435f8665ad9" name="Changes" comment="lines per page employee list tested" />
+    <list default="true" id="046edeb6-afa5-4b95-9a5b-0435f8665ad9" name="Changes" comment="lines per page employee list tested">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_11_23,_22_45_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_11_23,_22_46_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_11_23__22_45__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_23_11_23__22_46__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/Qugem/pages/AbstractBasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/Qugem/pages/AbstractBasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/Qugem/stepDefinitions/Language_Change.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/Qugem/stepDefinitions/Language_Change.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/Qugem/stepDefinitions/Step_EmployeeMasterData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/Qugem/stepDefinitions/Step_EmployeeMasterData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/Qugem/testRunners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/Qugem/testRunners/CukesRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/Qugem/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/Qugem/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Change_Language.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Change_Language.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,17 +34,32 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="mehmet" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Mehmet-Altuntas1986&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Mehmet-Altuntas1986/Qugem.git&quot;,
+    &quot;accountId&quot;: &quot;f3cd6729-0dd9-4dc3-add8-2eed32e38456&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-core/7.13.0/cucumber-core-7.13.0-sources.jar!/io/cucumber/core/exception/CompositeCucumberException.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2VDEk6Fwp3zKCstBJqrtzF51gC1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -39,31 +68,38 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Cucumber Java.Feature: Change_Language.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: The user should be to change language.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Verify Add new personal button is clickable and displayed.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in QUGEM_Selenium_Cucumber.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CukesRunner (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CukesRunner.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/mehmetaltuntas/Documents/QUGEM_Selenium_Cucumber&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;promo.kubernetes&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/java/com/company/Qugem/stepDefinitions" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/test/java/com/company/Qugem/stepDefinitions" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Verify that when we click next page arrow ,  employee table title is still displayed">
-    <configuration name="Scenario: Verify Employees Table titles are displayed" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: Change_Language">
+    <configuration name="Feature: Change_Language" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Change_Language.feature" />
       <option name="GLUE" value="com.company.Qugem.stepDefinitions com.company.Qugem.hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="QUGEM_Selenium_Cucumber" />
-      <option name="NAME_FILTER" value="^Verify Employees Table titles are displayed$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify Employees Table titles are displayed$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify Employees Table titles are displayed" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: Change_Language" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -75,15 +111,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify that when we click next page arrow ,  employee table title is still displayed" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: The user should be to change language" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Change_Language.feature" />
       <option name="GLUE" value="com.company.Qugem.stepDefinitions com.company.Qugem.hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="QUGEM_Selenium_Cucumber" />
-      <option name="NAME_FILTER" value="^Verify that when we click next page arrow \,  employee table title is still displayed$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify that when we click next page arrow \,  employee table title is still displayed$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify that when we click next page arrow ,  employee table title is still displayed" />
+      <option name="NAME_FILTER" value="^The user should be to change language$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^The user should be to change language$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: The user should be to change language" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -95,73 +131,148 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify that when we click next page arrow , user is still in the employee list page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" />
-      <option name="GLUE" value="com.company.Qugem.stepDefinitions com.company.Qugem.hooks" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+    <configuration name="All in QUGEM_Selenium_Cucumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QUGEM_Selenium_Cucumber" />
-      <option name="NAME_FILTER" value="^Verify that when we click next page arrow \, user is still in the employee list page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify that when we click next page arrow \, user is still in the employee list page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify that when we click next page arrow , user is still in the employee list page" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify the functionality of &quot;Lines Per Page&quot; selection" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" />
-      <option name="GLUE" value="com.company.Qugem.stepDefinitions com.company.Qugem.hooks" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+    <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QUGEM_Selenium_Cucumber" />
-      <option name="NAME_FILTER" value="^Verify the functionality of \&quot;Lines Per Page\&quot; selection$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify the functionality of \&quot;Lines Per Page\&quot; selection$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify the functionality of &quot;Lines Per Page&quot; selection" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="com.company.Qugem.testRunners.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.company.Qugem.testRunners" />
+      <option name="MAIN_CLASS_NAME" value="com.company.Qugem.testRunners.CukesRunner" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verifying Table Filter elements functionality" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EmployeeMasterData.feature" />
-      <option name="GLUE" value="com.company.Qugem.stepDefinitions com.company.Qugem.hooks" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+    <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QUGEM_Selenium_Cucumber" />
-      <option name="NAME_FILTER" value="^Verifying Table Filter elements functionality$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verifying Table Filter elements functionality$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verifying Table Filter elements functionality" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="PATTERN" value="com.company.Qugem.testRunners.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.company.Qugem.testRunners" />
+      <option name="MAIN_CLASS_NAME" value="com.company.Qugem.testRunners.CukesRunner" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QUGEM_Selenium_Cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.Qugem.testRunners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.Qugem.testRunners" />
+      <option name="MAIN_CLASS_NAME" value="com.company.Qugem.testRunners.CukesRunner" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QUGEM_Selenium_Cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.Qugem.testRunners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.Qugem.testRunners" />
+      <option name="MAIN_CLASS_NAME" value="com.company.Qugem.testRunners.CukesRunner" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QUGEM_Selenium_Cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.Qugem.testRunners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.Qugem.testRunners" />
+      <option name="MAIN_CLASS_NAME" value="com.company.Qugem.testRunners.CukesRunner" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QUGEM_Selenium_Cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.Qugem.testRunners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.Qugem.testRunners" />
+      <option name="MAIN_CLASS_NAME" value="com.company.Qugem.testRunners.CukesRunner" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QUGEM_Selenium_Cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.Qugem.testRunners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.Qugem.testRunners" />
+      <option name="MAIN_CLASS_NAME" value="com.company.Qugem.testRunners.CukesRunner" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QUGEM_Selenium_Cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.Qugem.testRunners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company.Qugem.testRunners" />
+      <option name="MAIN_CLASS_NAME" value="com.company.Qugem.testRunners.CukesRunner" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Verify that when we click next page arrow ,  employee table title is still displayed" />
-        <item itemvalue="Cucumber Java.Scenario: Verify that when we click next page arrow , user is still in the employee list page" />
-        <item itemvalue="Cucumber Java.Scenario: Verify the functionality of &quot;Lines Per Page&quot; selection" />
-        <item itemvalue="Cucumber Java.Scenario: Verifying Table Filter elements functionality" />
-        <item itemvalue="Cucumber Java.Scenario: Verify Employees Table titles are displayed" />
+        <item itemvalue="Cucumber Java.Feature: Change_Language" />
+        <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="JUnit.All in QUGEM_Selenium_Cucumber" />
+        <item itemvalue="Cucumber Java.Scenario: The user should be to change language" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +321,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -222,6 +345,17 @@
     <MESSAGE value="employee page filters functionality tested" />
     <MESSAGE value="lines per page employee list tested" />
     <option name="LAST_COMMIT_MESSAGE" value="lines per page employee list tested" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/target/test-classes/com/company/Qugem/testRunners/CukesRunner.class</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/BasePage_java$CukesRunner.ic" NAME="CukesRunner Coverage Results" MODIFIED="1693828285324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -17,7 +17,7 @@ public class Driver {
 
     // Creating a private constructor, so we are closing  access to the object of this class from outside the class
 
-    private Driver() {
+    private Driver() {  //Singeleton Pattern
     }
 
     private static InheritableThreadLocal<WebDriver> driverPool = new InheritableThreadLocal<>();

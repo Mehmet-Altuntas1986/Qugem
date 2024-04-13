@@ -14,32 +14,41 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
+
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.12.1</version>
+            <version>4.19.1</version>
         </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>4.1.0</version>
+            <version>5.7.0</version>
         </dependency>
 
 
+
+
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>7.12.1</version>
+            <version>7.16.1</version>
         </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
-            <version>7.12.1</version>
+            <version>7.16.1</version>
             <scope>test</scope>
         </dependency>
 
@@ -49,7 +58,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.10.0</version>
+            <version>5.10.2</version>
             <scope>test</scope>
         </dependency>
 
@@ -58,7 +67,7 @@
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-slf4j-impl</artifactId>
-            <version>2.20.0</version>
+            <version>2.23.1</version>
             <scope>test</scope>
         </dependency>
 
@@ -98,7 +107,7 @@
                         </goals>
                         <configuration>
                             <projectName>CucumberWebGui</projectName>
-                            <outputDirectory>${project.build.directory}/target/testReports/htmlReport/</outputDirectory>
+                            <outputDirectory>${project.build.directory}/testReports/htmlReport/</outputDirectory>
                             <inputDirectory>${project.build.directory}/testReports/jsonReport/</inputDirectory>
 
                             <jsonFiles>

@@ -107,7 +107,7 @@ public class Step_EmployeeMasterData extends Page_EmployeeMasterData {
     public void theUserClicksTheSelectArrow() throws InterruptedException {
         BrowserUtils.scrollToElement(LinesPerPageDownArrowBox);
         LinesPerPageDownArrowBox.click();
-       // new Actions(driver).click(LinesPerPageDownArrowBox);
+        // new Actions(driver).click(LinesPerPageDownArrowBox);
         Thread.sleep(4000);
     }
 
@@ -115,7 +115,7 @@ public class Step_EmployeeMasterData extends Page_EmployeeMasterData {
     @And("chooses a {int}, click and verify list doesn't have more than this number of personal")
     public void choosesAClickAndVerifyListDoesntHaveMoreThanThisNumberOfPersonal(int number_of_personal) {
         //li[.='50']
-       WebElement el_number_perpage= driver.findElement(By.xpath("//li[.='" + number_of_personal + "']"));
+        WebElement el_number_perpage = driver.findElement(By.xpath("//li[.='" + number_of_personal + "']"));
         el_number_perpage.click();
         List<WebElement> rows = driver.findElements(By.xpath("//tbody//tr"));
         Assert.assertTrue(rows.size() <= number_of_personal);
